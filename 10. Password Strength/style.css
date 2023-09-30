@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1F1F21;
+}
+
+.container{
+    background-color: #1F1F21;
+    max-width: 300px;
+    padding: 12px;
+    margin: 250px auto 0;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container input{
+    outline: 0;
+    border: 0;
+    color: white;
+    background: transparent;
+    width: 100%;
+    font-size: 20px;
+}
+
+.container img{
+    width: 35px;
+    cursor: pointer;
+    padding-left: 12px;
+}
+
+p{
+    color: white;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+
