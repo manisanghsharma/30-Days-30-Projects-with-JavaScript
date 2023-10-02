@@ -11,9 +11,14 @@ function reset(){
 }
 
 function calc(){
-    let answer = eval(display.value);
-    display.value = answer;
-    displayed = answer;
+    let exp = display.value;
+
+    while(exp[0]==0){
+        exp = exp.slice(1);
+    }
+    
+    display.value = eval(exp);
+    displayed = eval(exp);
 }
 
 function del(){
