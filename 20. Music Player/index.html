@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menubar">
+            <button id="back"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="menu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <img src="images/thumbnail.png" id="thumb">
+        <p id="songname">Despacito<br><span id="author-name">Luis Fonsi Ft. Puerto Rico</span></p>
+
+        <audio id="song">
+            <source src="media/music.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <button id="reverse"><i class="fa-solid fa-backward"></i></button>
+            <button id="play" onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></button>
+            <button id="forward"><i class="fa-solid fa-forward"></i></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4452b8cb45.js" crossorigin="anonymous"></script>
+</body>
+</html>
