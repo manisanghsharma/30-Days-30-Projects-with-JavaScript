@@ -48,9 +48,11 @@ input{
 
 }
 
-input:placeholder{
+input::placeholder{
     color: white;
+    opacity: 0.8;
 }
+
 
 #search{
     height: 100%;
