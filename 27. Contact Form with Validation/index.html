@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="https://formsubmit.co/a91c82eb199f0f347837d22ddd161354" method="POST">
+            <div id="namefield">
+                <p>Full Name</p>
+                <input type="text" id="name" placeholder="Enter Your Name" name="Name" onkeyup="validateName()">
+                <!-- <i class="fa-solid fa-circle-check" style="color: #5fae42;"></i> -->
+                <span id="name-error"></span>
+            </div>
+            <div>
+                <p>Phone No.</p>
+                <input type="text" id="phone" placeholder="123 456 7890" name="PhoneNo" onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+            </div>
+
+            <div>
+                <p>Email Id</p>
+                <input type="text" id="email" placeholder="Enter Email" name="Email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
+            </div>
+            <div>
+                <p>Your Message</p>
+                <textarea rows="4" placeholder="Enter Your Message" id="msg" name="Message" onkeyup="validateMsg()"></textarea>
+                <span id="msg-error"></span>
+            </div>
+            <div class="submit">
+                <button id="submitBtn" onclick="return validateForm()">Submit</button>
+            </div>
+        </form>
+        <span id="fix"></span>
+    </div>
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4452b8cb45.js" crossorigin="anonymous"></script>
+</body>
+</html>
